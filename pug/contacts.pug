@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Контакты - Family Fitness в Кузнечихе (Ярославль)
+        meta(name="Description" content="Контакты фитнес-клуба Family Fitness. Удобное расположение, большой выбор групповых программ, профессиональные тренеры. Звони и записывайся +7(4852)70-00-29")
+        link(rel="stylesheet" href="/css/style.css")
+        link(href="/image/favicon.ico" rel="shortcut icon" type="image/x-icon")
+        <script type="text/javascript" src="/metrika.js"></script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/67766076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    body
+        wrapper
+
+            include blocks/header.pug
+
+            section.contacts
+                .container
+                    h2.contacts__title Наши контакты:
+                .contacts__maps
+                    script(type="text/javascript" charset="utf-8" id="map" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa51a2e81932d3571cab21f48107c7dd2968a286626fca01df6ab4eb6d0089214&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true")
+                    .contacts__part
+                    
+                            .contacts__block
+
+                                .contacts__adress Ярославская область, д.Кузнечиxа, ул.Нефтяников, д.18
+                                a(href="https://yandex.ru/navi/?whatshere%5Bpoint%5D=39.893717%2C57.703578&whatshere%5Bzoom%5D=18&lang=ru&from=navi" target="_blank").contacts__nav Открыть в навигаторе
+                                //- a(href="tel:+74852700029").contacts__tel +7(4852)70-00-29
+                                a(href="tel:+79300761881").contacts__tel +7(910)974-94-84
+                            svg.contacts__triangle(viewBox="0 0 600 1000" fill="#fff" preserveAspectRatio="none")
+                                polygon(points="0,0 600,0 600,800 300,1000 0,800")
+            
+
+            include blocks/footer.pug
+    
+    script(src="/main.js")
+
+
+
+

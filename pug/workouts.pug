@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Программы занятий - Family Fitness в Кузнечихе (Ярославль)
+        meta(name="Description" content="Программы тренировок для взрослых и детей в фитнес-клубе Family Fitness. Большое разнообразие, профессиональные тренеры! Запись на тренировки по телефону +7(4852)70-00-29")
+        link(rel="stylesheet" href="/css/style.css")
+        link(href="/image/favicon.ico" rel="shortcut icon" type="image/x-icon")
+        <script type="text/javascript" src="/metrika.js"></script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/67766076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    body
+        wrapper
+
+            include blocks/header.pug
+
+            section.programs
+                    .container
+                        h2.programs__workouts Программы тренировок
+                        .programs__unit
+                            a(href="#children").programs__link.programs__link_margin Детские
+                            a(href="#adult").programs__link Взрослые
+                        h4.programs__topic(id="adult") Тренировки для взрослых
+
+                        .programs__list
+
+                            include programs/hotiron.pug
+                            include programs/bestfit.pug
+                            include programs/sculpt.pug
+                            include programs/abs.pug
+                            //- include programs/pilates.pug
+                            include programs/stretch.pug
+
+                        h4.programs__topic(id="children") Тренировки для детей
+
+                        .programs__list
+                            include programs/childrens.pug
+                            include programs/activity.pug    
+                            
+
+
+
+            include blocks/footer.pug
+    
+    script(src="/main.js")

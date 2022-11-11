@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Команда - Family Fitness в Кузнечихе (Ярославль)
+        meta(name="Description" content="Здесь можно познакомиться с тренерами фитнес-клуба Family Fitness, профессионалами свого дела. Запись на тренировки по телефону +7(4852)70-00-29")
+        link(rel="stylesheet" href="/css/style.css")
+        link(href="/image/favicon.ico" rel="shortcut icon" type="image/x-icon")
+        <script type="text/javascript" src="/metrika.js"></script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/67766076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+     
+    body
+        wrapper
+
+            include blocks/header.pug
+
+            section.team
+                .container
+                    h2.team__title Наша Команда
+                    ul.team__content
+                        li.team__item
+                            .team__member
+                                .team__photo
+                                    img(src="/image/member.jpg", alt="").team__img
+                                .team__name Анфиса Петрова
+                                ul.team__teaches
+                                    each item in ['Best Fit', 'Pilates']
+                                        li.team__each=item
+                                .team__btn(id="btn") Больше информации
+                            .team__text(id="text") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi consectetur quasi modi omnis, quae debitis expedita id ullam tenetur, explicabo adipisci maxime suscipit ratione illum porro ab eius similique aspernatur facere quo nam. Animi doloremque, culpa saepe quaerat architecto eligendi. Pariatur, accusamus architecto iusto ipsam aspernatur dolores itaque autem.
+                        li.team__item
+                            .team__member
+                                .team__photo
+                                    img(src="/image/member.jpg", alt="").team__img
+                                .team__name Анфиса Петрова
+                                ul.team__teaches
+                                    each item in ['Best Fit', 'Pilates']
+                                        li.team__each=item
+                                .team__btn(id="btn") Больше информации
+                            .team__text(id="text") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi consectetur quasi modi omnis, quae debitis expedita id ullam tenetur, explicabo adipisci maxime suscipit ratione illum porro ab eius similique aspernatur facere quo nam. Animi doloremque, culpa saepe quaerat architecto eligendi. Pariatur, accusamus architecto iusto ipsam aspernatur dolores itaque autem.
+                        li.team__item
+                            .team__member
+                                .team__photo
+                                    img(src="/image/member.jpg", alt="").team__img
+                                .team__name Анфиса Петрова
+                                ul.team__teaches
+                                    each item in ['Best Fit', 'Pilates']
+                                        li.team__each=item
+                                .team__btn(id="btn") Больше информации
+                            .team__text(id="text") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi consectetur quasi modi omnis, quae debitis expedita id ullam tenetur, explicabo adipisci maxime suscipit ratione illum porro ab eius similique aspernatur facere quo nam. Animi doloremque, culpa saepe quaerat architecto eligendi. Pariatur, accusamus architecto iusto ipsam aspernatur dolores itaque autem.
+                        li.team__item
+                            .team__member
+                                .team__photo
+                                    img(src="/image/member.jpg", alt="").team__img
+                                .team__name Анфиса Петрова
+                                ul.team__teaches
+                                    each item in ['Best Fit', 'Pilates']
+                                        li.team__each=item
+                                .team__btn(id="btn") Больше информации
+                            .team__text(id="text") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi consectetur quasi modi omnis, quae debitis expedita id ullam tenetur, explicabo adipisci maxime suscipit ratione illum porro ab eius similique aspernatur facere quo nam. Animi doloremque, culpa saepe quaerat architecto eligendi. Pariatur, accusamus architecto iusto ipsam aspernatur dolores itaque autem.
+                        li.team__item
+                            .team__member
+                                .team__photo
+                                    img(src="/image/member.jpg", alt="").team__img
+                                .team__name Анфиса Петрова
+                                ul.team__teaches
+                                    each item in ['Best Fit', 'Pilates']
+                                        li.team__each=item
+                                .team__btn(id="btn") Больше информации
+                            .team__text(id="text") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi consectetur quasi modi omnis, quae debitis expedita id ullam tenetur, explicabo adipisci maxime suscipit ratione illum porro ab eius similique aspernatur facere quo nam. Animi doloremque, culpa saepe quaerat architecto eligendi. Pariatur, accusamus architecto iusto ipsam aspernatur dolores itaque autem.
+
+
+            include blocks/footer.pug
+    
+    script(src="/main.js")

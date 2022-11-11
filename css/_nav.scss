@@ -1,0 +1,168 @@
+.nav{
+
+    width: 60%;
+
+        @include desc{
+            width: 65%;
+        }
+        @include tablets{
+            display: none;
+        }
+  
+
+   &__list{
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       
+   }
+
+   &__item{
+       
+       text-transform: uppercase;
+       font-size: 16px;
+       @include blue;
+       transition: 0.3s;
+
+       &:hover{
+        @include pink;
+        opacity: 0.9;
+        transition: 0.3s;
+        }
+
+        @include desc{
+            font-size: 14px;
+        }
+       
+   }
+
+   &__we{
+       
+    text-transform: uppercase;
+    font-size: 16px;
+    @include blue;
+    transition: 0.3s;
+
+    &:hover{
+     @include pink;
+     opacity: 0.9;
+     transition: 0.3s;
+     }
+
+     @include desc{
+         font-size: 14px;
+     }
+    
+}
+
+
+  &_active{
+
+        position: fixed;
+        @include blue-1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    
+        overflow: hidden;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+    
+    
+        .nav__list {
+    
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+
+        }
+    
+        .nav__item {
+          display: flex;
+          flex-direction: column;
+          font-size: 20px;
+          transition: 0.3s;
+    
+          &:hover{
+              @include pink;
+              opacity: 0.9;
+              transition: 0.3s;
+          }
+    
+          &:before {
+            content: "\2022";
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            text-align: center;
+          }
+    
+          &:first-child:before {
+            content: "";
+          }
+    
+        }
+
+        .nav__we{
+          display: none;
+        }
+
+        .nav__block{
+          text-align: center;
+        }
+
+        .nav__about{
+          padding: 0 0;
+          left: unset;
+          position: unset;
+          background-color: #e6f0f2;
+        }
+
+        .nav__about_item{
+          margin-bottom: 0;
+
+          &:first-child{
+            display: block;
+          }
+
+          &:first-child:before{
+            content: "";
+          }
+         
+        }
+    
+      }
+
+      &__block{
+        position: relative;
+        display: block;
+        cursor: pointer;
+
+        &:hover .nav__about{
+          left: -35%;
+        }
+      }
+
+      &__about{
+        position: absolute;
+        // @include blue-2;
+        padding: 40% 35%;
+        z-index: 1;
+        left: -9999px;
+
+
+        &_item{
+          margin-bottom: 15%;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    
+    
+}

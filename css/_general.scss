@@ -1,0 +1,130 @@
+.general{
+    height: 600px;
+    background: url(/image/ff2.jpg) no-repeat center;
+    background-size: cover;
+
+    @include desc{
+        height: 500px;
+    }
+
+    @include tablets{
+        height: 400px;
+    }
+
+    @include tablets-mini{
+        height: 300px;
+    }
+
+    
+    
+
+    &__block{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(230, 240, 242, 0.7);
+        margin-left: 50%;
+        display: flex;
+
+        @include phones{
+            width: 100%;
+            margin-left: initial;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        margin-top: 20%;
+
+        @include desc{
+            margin-top: 25%;
+        }
+
+        @include phones{
+            margin-left: initial;
+            margin-top: initial;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+   
+    
+
+    &__title{
+        @include pink;
+        text-transform: uppercase;
+        font-size: 62px;
+        line-height: 1;
+        font-family: 'Anton', sans-serif;
+
+        @include desc{
+            font-size: 50px;
+        }
+
+        @include tablets{
+            font-size: 40px;
+        }
+
+        @include tablets-mini{
+            font-size: 35px;
+        }
+
+        @include phones{
+            font-size: 28px;
+            text-align: center;
+        }
+        
+      
+    }
+
+    &__location{
+       
+        margin-bottom: 30px;
+        margin-top: 25px;
+
+        @include tablets-mini{
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+
+       
+
+    }
+
+    &__link{
+        width: max-content;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 10px 15px;
+        border: 1px solid #ea86a2;
+        @include pink;
+
+        &:hover{
+            @include blue;
+            border: 1px solid #4e709e;
+        }
+
+        @include desc{
+            font-size: 18px;
+        }
+
+        @include tablets{
+            font-size: 16px;
+            padding: 8px 10px;
+        }
+
+        @include tablets-mini{
+            font-size: 14px;
+            padding: 6px 8px;
+        }
+
+        @include phones{
+            font-size: 12px;
+        }
+    }
+}

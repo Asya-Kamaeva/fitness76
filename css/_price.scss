@@ -1,0 +1,350 @@
+.price{
+    margin-bottom: 5%;
+
+    &__title{
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+
+        @include tablets{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__content2{
+      justify-content: space-evenly;
+    }
+
+    &__item{
+        width: 20%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desc{
+            width: 22%;
+        }
+
+        @include tablets{
+            width: 43%;
+            margin-bottom: 5%;
+        }
+
+        @include tablets-mini{
+            width: 47%;
+        }
+
+        @include phones{
+            width: 48%;
+        }
+    }
+
+    &__block{
+        padding: 2% 5%;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 15px #afb593;
+        margin-bottom: 10%;
+
+        &:hover{
+            box-shadow: 0 0 15px #4e709eb8;
+        }
+    }
+
+    &__number{
+        font-size: 26px;
+        margin-bottom: 3%;
+        line-height: 1;
+        text-align: center;
+
+         @include desc{
+             font-size: 24px;
+         }
+
+         @include phones{
+             font-size: 21px;
+         }
+    }
+
+    &__desc{
+        opacity: 0.7;
+
+        @include desc{
+            font-size: 15px;
+        }
+
+        @include tablets{
+            font-size: 16px;
+        }
+
+        @include phones{
+            font-size: 14px;
+        }
+    }
+
+    &__unit{
+        margin-bottom: 7%;
+      
+    }
+
+    &__line{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom:3%;
+        white-space: nowrap;
+
+        @include desc{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+
+        @include tablets{
+            flex-direction: initial;
+            align-items: flex-end;
+        }
+
+        @include phones{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+    }
+
+    &__capture{
+        margin-right: 3%;
+        font-size: 14px;
+
+        @include desc{
+            font-size: 12px;
+        }
+    }
+
+    &__value{
+        font-size: 28px;
+        line-height: 1;
+
+        @include desc{
+            font-size: 26px;
+        }
+
+        @include phones{
+            font-size: 22px;
+        }
+       
+    }
+
+    &__part{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 5%;
+
+        @include desc{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @include tablets{
+            padding-left: 10%;
+            padding-right: 5%; 
+        }
+
+        @include tablets-mini{
+            padding-left: 5%;
+        }
+
+        @include phones{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+    }
+
+    &__string{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+
+        &:hover .price__svg{
+            fill: #4e709eb8;
+        }
+
+    }
+
+
+    &__svg{
+        display: block;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        fill: #afb593;
+        margin-right: 5%;
+
+        @include desc{
+            min-width: 25px;
+            width: 25px;
+
+        }
+
+        @include tablets{
+            min-width: 30px;
+            width: 30px;
+        }
+
+        @include phones{
+            min-width: 25px;
+            width: 25px;
+
+        }
+
+    }
+
+    &__text{
+        white-space: normal;
+        width: fit-content;
+
+        @include phones{
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+
+    &__attention{
+        display: flex;
+        align-items: center;
+        line-height: 1.3;
+        margin-bottom: 3%;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        @include phones{
+            flex-direction: column;
+            margin-bottom: 7%;
+        }
+        
+       
+
+        &_svg{
+            width: 70px;
+            height: 60px;
+            fill: #4e709e;
+            margin-right: 20px;
+            margin-left: 16%;
+
+            @include desc{
+                margin-left: 11%;
+            }
+
+            @include tablets{
+                margin-left: 7%;
+                width: 55px;
+                height: 55px;
+                margin-right: 15px;
+            }
+
+            @include tablets-mini{
+                margin-left: 0;
+                width: 45px;
+                height: 45px;
+            }
+
+            @include phones{
+                margin-bottom: 5%;
+            }
+        }
+
+        &_text{
+            width: 65%;
+
+            @include tablets{
+                width: 80%;
+            }
+
+            @include tablets-mini{
+                width: 88%;
+                font-size: 13px;
+            }
+
+            @include phones{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    &__discount{
+        display: flex;
+        align-items: center;
+
+        @include phones{
+            flex-direction: column;
+            margin-bottom: 10%;
+        }
+        
+
+        &_svg{
+            width: 100px;
+            height: 80px;
+            fill: #4e709e;
+            margin-left: 15%;
+
+            @include desc{
+                margin-left: 10%;
+            }
+
+            @include tablets{
+                margin-left: 5%;
+                width: 80px;
+                height: 65px;
+                
+            }
+
+            @include tablets-mini{
+                margin-left: 0;
+                width: 65px;
+                height: 55px;
+            }
+
+            @include phones{
+                margin-bottom: 3%;
+            }
+        }
+
+        &_text{
+            text-transform: uppercase;
+
+            @include desc{
+                width: 70%;
+            }
+
+            @include tablets{
+                width: 80%;
+            }
+
+            @include tablets-mini{
+                width: 86%;
+                font-size: 14px;
+            }
+
+            @include phones{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+
+}

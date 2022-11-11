@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Семейный фитнес-клуб в Кузнечихе (Ярославль) - Family Fitness
+        meta(name="Description" content="Фитнес-клуб для всей семьи в Кузнечихе (Ярославль). Большой выбор групповых программ, профессиональные тренеры. Звони и записывайся в Family Fitness +7(4852)70-00-29")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous")
+        
+        link(href="../image/favicon.ico" rel="shortcut icon" type="image/x-icon")
+
+        <script type="text/javascript" src="/metrika.js"></script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/67766076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    body
+
+        wrapper
+            include blocks/header.pug
+
+            section.general
+                .general__block
+                    .general__content
+
+                        h1.general__title Семейный<br>клуб 
+                        h2.general__location в Кузнечихе
+                        
+                        a(href="#more").general__link Хочу подробностей
+
+            section.about(id="more")
+                .container
+                    .about__content
+                        .about__icon
+                            img(src="/image/dumbbell.svg", alt="dumbbell")
+                        .about__text 
+                            .about__text_block В семейной студии Family Fitness вы найдете множество детских и взрослых программ.
+                            .about__text_block Наша задача - это полноценное и разностороннее развитие детей с самого маленького возраста. В нашей студии, помимо фитнеса, для детей будут доступны развивающие и творческие занятия. 
+                            .about__text_block Для взрослых мы подготовили самые популярные и эффективные тренировки. Благодаря фитнесу у вас будет подтянутая фигура, здоровая спина и отличное настроение.
+
+            section.programs
+                .container
+                    //- h3.programs__preview какой-то заголовок
+                    h2.programs__capture Программы тренировок
+                    .programs__list
+                        include programs/hotiron.pug
+                        include programs/bestfit.pug
+                        include programs/sculpt.pug
+                        include programs/abs.pug
+                        //- include programs/pilates.pug
+                        include programs/stretch.pug
+                        include programs/childrens.pug
+                        include programs/activity.pug
+                        
+            
+            section.maps
+                .container
+                    .maps__content
+                        h2.maps__title Мы рядом, приходи к нам
+                        a(href="https://yandex.ru/maps/-/CCQxbZeNKC" target="_blank").maps__block
+                            span.maps__text д.Кузнечиха, ул.Нефтяников, д.18
+                            span.maps__desc (вход с торца здания, со стороны 5 подъезда)
+                        
+                .maps__maps
+                    include blocks/map.pug
+                        
+            include blocks/footer.pug
+    
+
+    script(src="/main.js")
+
+    

@@ -1,0 +1,26 @@
+header.header
+    .container
+        .header__content(id="up")
+            .header__logo
+                a(href="/index.html").header__link
+                    img(src="/image/Logo.png", alt="logo").header__logo_img
+            nav.nav
+                ul.nav__list
+                    li.nav__block
+                        .nav__we О нас
+                        ul.nav__about
+                            each value, index in {'Программы' : '/workouts.html', 'Мероприятия' : '/events.html'}
+                                li.nav__about_item.nav__item
+                                    a(href=value)=index
+                    each value, index in {'Расписание' : '/timetable.html', 'Цены' : '/price.html', 'Контакты' : '/contacts.html'}
+                        li.nav__item
+                            a(href=value)=index
+            .header__contact
+                a(href="tel:+74852700029").header__tel +7(910)974-94-84
+                
+                a(href="https://instagram.com/family.fitness76" target="_blank").header__inst
+                    span.header__inst_title Мы в Instagram
+                    .header__inst_icon
+                        img(src="/image/instagram.png", alt="inst")
+            .hamburger
+                span.hamburger__menu
